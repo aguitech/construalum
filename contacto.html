@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto · ConstruAlum Morelia</title>
+<meta name="description" content="Contacta a ConstruAlum. Cotiza por WhatsApp, llamada o formulario. Morelia, Michoacán.">
+<meta name="theme-color" content="#0a2540">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div>📍 Morelia, Michoacán · Blvd. García de León 1500</div>
+    <div>
+      <a href="tel:+52443****802">📞 443 597 1802</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:contacto@construalum.mx">✉️ contacto@construalum.mx</a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">
+      <img src="images/logo.svg" alt="ConstruAlum">
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/5214435971802?text=Hola%20ConstruAlum" target="_blank" rel="noopener" class="nav-cta">💬 Cotizar ahora</a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('images/servicios/panel-aluminio/principal.jpg');" data-speed="0.3"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Inicio</a><span class="sep">/</span><span>Contacto</span></div>
+    <h1>Cotiza tu <span style="background:linear-gradient(135deg,#fff,#4a9ee0);-webkit-background-clip:text;background-clip:text;color:transparent;">proyecto</span></h1>
+    <p>Estamos para atenderte. Elige tu canal preferido.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h2 style="font-size: 1.8rem; font-weight: 900; color: var(--ink); margin-bottom: 0.5rem;">Información de contacto</h2>
+        <p style="color: var(--text-2); margin-bottom: 1rem;">Estamos disponibles para ayudarte con tu próximo proyecto.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <h4>Oficina</h4>
+            <p>Blvd. García de León 1500<br>Morelia, Michoacán, México</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <h4>Teléfono</h4>
+            <p><a href="tel:+52443****802" style="color: var(--brand-2); font-weight: 700;">443 597 1802</a><br>Lun–Vie 9:00–19:00 · Sáb 9:00–14:00</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:contacto@construalum.mx" style="color: var(--brand-2); font-weight: 700;">contacto@construalum.mx</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/5214435971802" target="_blank" rel="noopener" style="color: var(--brand-2); font-weight: 700;">Enviar mensaje</a> · Respuesta rápida</p>
+          </div>
+        </div>
+
+        <p style="margin-top: 1rem;"><a href="https://wa.me/5214435971802?text=Hola%20ConstruAlum%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener" class="btn btn-wa">💬 Cotiza por WhatsApp ahora</a></p>
+      </div>
+
+      <form class="contact-form reveal" onsubmit="return submitContact(event)">
+        <h3>Solicita tu cotización</h3>
+        <p>Completa el formulario y te contactamos por WhatsApp en menos de 24 horas.</p>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Nombre completo *</label>
+            <input type="text" id="name" required placeholder="Tu nombre">
+          </div>
+          <div class="form-field">
+            <label for="phone">Teléfono *</label>
+            <input type="tel" id="phone" required placeholder="+52 443 000 0000">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="tu@email.com">
+        </div>
+        <div class="form-field">
+          <label for="service">Servicio de interés</label>
+          <select id="service">
+            <option>Cancelaría (PVC / Vidrio templado)</option>
+            <option>Aplicaciones de vidrio</option>
+            <option>Barandales</option>
+            <option>Domos</option>
+            <option>Techumbres</option>
+            <option>Herrería de alto nivel</option>
+            <option>Panel de aluminio</option>
+            <option>Repisas</option>
+            <option>Cubiertas para mesa</option>
+            <option>Anti estornudos</option>
+            <option>Otro / No estoy seguro</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Cuéntanos sobre tu proyecto</label>
+          <textarea id="message" rows="5" placeholder="Ubicación, dimensiones, materiales preferidos, urgencia..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-wa" style="width: 100%; justify-content: center;">
+          Enviar y abrir WhatsApp →
+        </button>
+        <p style="text-align: center; font-size: 0.85rem; color: var(--text-3); margin-top: 1rem;">🔒 Tu información es confidencial.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand-text">
+        <strong>ConstruAlum®</strong>
+        <p>Soluciones fuertes, estructuras fuertes.</p>
+      </div>
+      <div class="footer-col"><h5>Sitio</h5><ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="galeria.html">Galería</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h5>Contacto</h5><ul><li><a href="tel:+52443****802">443 597 1802</a></li><li><a href="mailto:contacto@construalum.mx">contacto@construalum.mx</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li>ConstruAlum® · 2015–<span id="year"></span></li><li>Construido con ♥ por <a href="https://github.com/aguitech">AGUITECH</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> ConstruAlum® · Todos los derechos reservados</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop">↑</button>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
