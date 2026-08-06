@@ -1151,3 +1151,167 @@ button { border: none; cursor: pointer; font-family: inherit; }
   .lightbox-prev { left: 0.8rem; }
   .lightbox-next { right: 0.8rem; }
 }
+
+/* =============================================================
+   AGUITECH · MARCA BLANCA (powered by + footer)
+   Paleta AGUITECH: cyan eléctrico + azul profundo + neutral
+   ============================================================= */
+
+:root {
+  --aguitech-cyan: #00d4ff;
+  --aguitech-blue: #0066ff;
+  --aguitech-deep: #0a2540;
+  --aguitech-glow: rgba(0, 212, 255, 0.25);
+}
+
+/* Brand "by AGUITECH" en la navbar */
+.nav-brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+}
+.nav-brand img {
+  height: 38px !important;
+  width: auto !important;
+}
+.nav-brand-by {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  line-height: 1 !important;
+  border-left: 1px solid rgba(255,255,255,0.15) !important;
+  padding-left: 0.6rem !important;
+  margin-left: 0.1rem !important;
+}
+.by-mark {
+  font-size: 0.55rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  color: rgba(255,255,255,0.55) !important;
+  text-transform: uppercase !important;
+  margin-bottom: 2px !important;
+}
+.by-name {
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.06em !important;
+  color: var(--aguitech-cyan, #00d4ff) !important;
+  text-transform: uppercase !important;
+  background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Badge "Powered by AGUITECH" en hero */
+.hero-poweredby {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.55rem !important;
+  padding: 0.45rem 0.95rem !important;
+  margin-top: 0.9rem !important;
+  background: linear-gradient(135deg, rgba(0,212,255,0.08) 0%, rgba(0,102,255,0.06) 100%) !important;
+  border: 1px solid rgba(0,212,255,0.22) !important;
+  border-radius: 999px !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em !important;
+  color: rgba(255,255,255,0.85) !important;
+  backdrop-filter: blur(6px) !important;
+  width: fit-content !important;
+}
+.poweredby-mark {
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.poweredby-mark sup {
+  font-size: 0.55em !important;
+  -webkit-text-fill-color: rgba(0,212,255,0.6) !important;
+}
+.poweredby-sep {
+  color: rgba(0,212,255,0.5) !important;
+}
+.poweredby-tag {
+  font-weight: 400 !important;
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* Footer AGUITECH */
+.footer-aguitech {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.35rem !important;
+  margin-top: 0.5rem !important;
+  padding: 0.6rem 0 !important;
+  border-top: 1px solid rgba(255,255,255,0.08) !important;
+}
+.aguitech-mark {
+  font-size: 1.05rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.aguitech-mark sup {
+  font-size: 0.5em !important;
+  -webkit-text-fill-color: rgba(0,212,255,0.6) !important;
+}
+.aguitech-tag {
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.5) !important;
+}
+.footer-aguitech-mini {
+  font-size: 0.78rem !important;
+  color: rgba(255,255,255,0.55) !important;
+}
+.footer-aguitech-mini a {
+  color: var(--aguitech-cyan, #00d4ff) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+.footer-aguitech-mini a:hover {
+  text-decoration: underline !important;
+}
+.footer-aguitech-li {
+  list-style: none !important;
+  font-size: 0.85rem !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  margin-top: 0.5rem !important;
+}
+.footer-aguitech-li strong {
+  background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.footer-aguitech-li-mini {
+  list-style: none !important;
+  font-size: 0.7rem !important;
+  color: rgba(255,255,255,0.55) !important;
+  margin-top: 0.15rem !important;
+}
+.footer-aguitech-li-mini a {
+  color: var(--aguitech-cyan, #00d4ff) !important;
+  text-decoration: none !important;
+}
+.footer-aguitech-li-mini a:hover {
+  text-decoration: underline !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 720px) {
+  .nav-brand img { height: 30px !important; }
+  .by-mark { font-size: 0.5rem !important; }
+  .by-name { font-size: 0.72rem !important; }
+  .hero-poweredby { font-size: 0.7rem !important; padding: 0.4rem 0.8rem !important; }
+  .aguitech-tag { font-size: 0.6rem !important; letter-spacing: 0.12em !important; }
+}
